@@ -20,7 +20,7 @@ function turnLeft (duration: number) {
     stopMovement()
 }
 function pattern01 () {
-    for (let index = 0; index < 8; index++) {
+    for (let index = 0; index < 4; index++) {
         ArmLeft(90)
         ArmRight(30)
         turnLeft(1000)
@@ -87,6 +87,7 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 function turrrrrrrrn () {
     turnRight(7000)
+    basic.showIcon(IconNames.Heart)
 }
 function moveBackward () {
     pins.digitalWritePin(DigitalPin.P13, 1)
